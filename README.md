@@ -10,3 +10,7 @@ A college recommendation Web/Android application, supporting over 20 features, i
 
 
 ![](https://github.com/yanranw1/College-Compass/assets/83220283/a52c8317-3bce-4021-a05b-a8e4899f9260)
+### College-Compass
+
+# Contact
+- Yanran Wang - yanranw1@uci.edu

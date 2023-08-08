@@ -1,0 +1,38 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search your college</title>
+</head>
+<body>
+
+<h2> Your School Match Results</h2>
+
+<table id=match_table class="table table-striped">
+    <!-- Create a table header -->
+    <thead>
+    <tr>
+        <!-- Titles of each column-->
+        <th>Match Score</th>
+        <th>Name</th>
+        <th>Safety Level</th>
+        <th>Location</th>
+        <th>SAT</th>
+        <th>Net Cost</th>
+    </tr>
+    </thead>
+    <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+    <tbody id=match_table_body></tbody>
+</table>
+
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./check.js"></script>
+
+</body>
+</html>
+

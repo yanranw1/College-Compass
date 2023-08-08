@@ -1,0 +1,49 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to CollegeConnector</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+</head>
+<body>
+<h2>
+    <img src="college.png"style="width:64px;height:64px;">
+    CollegeConnector
+</h2>
+
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<div class="container">
+    <div class="login-box">
+        <div class="login-icon">
+            <img src="college.png"style="width:70px;height:70px;">
+        </div>
+        <!--        <FORM ACTION="form-recaptcha" METHOD="POST">-->
+        <form id="login_form" method="post" action="#">
+            <p class="sign_in">Sign in</p>
+            <div class="login_field">
+                <label>
+                    <input name="username" placeholder="Enter Username/Email" type="text" >
+                </label>
+                <label>
+                    <input name="password" placeholder="Enter Password" type="password">
+                </label>
+                <br>
+                <input type="submit" value="Login">
+            </div>
+<!--            <div class="g-recaptcha" data-sitekey="6LdT4NglAAAAAK_R7syKWvjQW0XbgLTElllSFkpe"></div>-->
+        </form>
+        <div id="login_error_message"></div>
+
+        <!--        </FORM>-->
+    </div>
+</div>
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./login.js"></script>
+
+</body>
+</html>

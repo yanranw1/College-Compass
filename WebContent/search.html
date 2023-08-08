@@ -1,0 +1,112 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search your college</title>
+    <!-- jQuery is required -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- include jquery autocomplete JS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.11/jquery.autocomplete.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h2>Search Your College</h2>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<!--<input type="text" name="school_name" id="autocomplete"-->
+<!--       class="autocomplete-searchbox form-control"-->
+<!--       placeholder="Search School"/>-->
+
+<form id="search_form" method="post" action="#">
+    <label><b>School Name</b></label>
+    <label>
+        <input type="text" name="school_name" id="autocomplete"
+               class="autocomplete-searchbox form-control"
+               placeholder="Search School"/><!--        <input type="text" name="school_name" id="autocomplete"-->
+<!--               class="autocomplete-searchbox form-control"-->
+<!--               placeholder="Search School"/>-->
+    </label>
+    <br>
+    <label><b>Location-State</b></label>
+    <label>
+        <input name="location" placeholder="Enter Location(State Name)" type="text">
+    </label>
+    <br>
+    <label><b>Other</b></label>
+    <label>
+        <input name="other" placeholder="Other Information" type="text">
+    </label>
+    <br>
+    <input type="submit" value="Search">
+</form>
+<div id="search_error_message"></div>
+
+
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<h2>Browse Your College</h2>
+<h3>Browse Your College By Genres</h3>
+<form id="browse_form1">
+    <label for="browse_way1">Choose how you want to browse colleges:</label>
+    <select name="browse_way" id="browse_way1">
+        <option value=""></option>
+        <!--        <option value="public university">Public University</option>-->
+        <!--        <option value="private university">Private University</option>-->
+    </select>
+    <button type="submit">Search</button>
+</form>
+
+<h3>Browse Your College By Name</h3>
+<form id="browse_form2">
+    <label for="browse_way2">Choose how you want to browse colleges:</label>
+    <select name="browse_way" id="browse_way2">
+        <option value=""></option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
+        <option value="I">I</option>
+        <option value="J">J</option>
+        <option value="K">K</option>
+        <option value="L">L</option>
+        <option value="M">M</option>
+        <option value="N">N</option>
+        <option value="O">O</option>
+        <option value="P">P</option>
+        <option value="Q">Q</option>
+        <option value="R">R</option>
+        <option value="S">S</option>
+        <option value="T">T</option>
+        <option value="U">U</option>
+        <option value="V">V</option>
+        <option value="W">W</option>
+        <option value="X">X</option>
+        <option value="Y">Y</option>
+        <option value="Z">Z</option>
+        <option value="*">*</option>
+    </select>
+
+    <!-- Other form fields go here -->
+
+    <button type="submit">Search</button>
+</form>
+
+<div id="browse_error_message"></div>
+
+
+
+
+<!-- include jQuery-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!-- include our own JS file -->
+<script src="./search.js"></script>
+
+</body>
+</html>
+

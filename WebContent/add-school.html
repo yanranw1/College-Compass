@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to CollegeConnector</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+    <style>
+        .container {
+            position: absolute; /* set the position to absolute */
+            top: 500px; /* set the top distance to 50 pixels */
+            margin: 0 auto; /* center the container horizontally */
+            max-width: 1400px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="e-main.html">Home</a></li>
+        <li><a href="add-school.html">Add a School</a></li>
+        <li><a href="add-location.html">Add a Location</a></li>
+        <li><a href="add-genre.html">Add a Genre</a></li>
+        <li><a href="search.html">Browsing School</a></li>
+    </ul>
+</nav>
+<h2>
+    <img src="college.png"style="width:64px;height:64px;">
+    CollegeConnector
+</h2>
+
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<div class="container">
+    <div class="login-box">
+        <div class="login-icon">
+            <img src="college.png"style="width:70px;height:70px;">
+        </div>
+        <form id="new-school" method="post" action="#">
+            <p class="sign_in">Add a School</p>
+            <div class="login_field">
+                <label>
+                    <input name="name" placeholder="Enter name" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="rating" placeholder="Enter rating" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="numVotes" placeholder="Enter numVotes" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="net_cost" placeholder="Enter net_cost" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="description" placeholder="Enter description" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="upper_SAT" placeholder="Enter upper_SAT" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="lower_SAT" placeholder="Enter lower_SAT" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="link_to_website" placeholder="Enter link_to_website" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="telephone" placeholder="Enter telephone" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="address" placeholder="Enter address" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="genre_name" placeholder="Enter genre" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="zipcode" placeholder="Enter zipcode" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="state_init" placeholder="Enter state initials" type="text" style="width: 80%;">
+                </label>
+                <label>
+                    <input name="city" placeholder="Enter city name" type="text" style="width: 80%;">
+                </label>
+                <br>
+                <input type="submit" value="Submit" >
+<!--                <input type="submit" value="Submit"  onclick="resetForm()">-->
+
+            </div>
+        </form>
+        <div id="login_error_message"></div>
+    </div>
+</div>
+<script>
+    function resetForm() {
+        document.getElementById("new-location").reset();
+    }
+</script>
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./add-school.js"></script>
+
+</body>
+</html>

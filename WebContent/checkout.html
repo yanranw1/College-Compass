@@ -1,0 +1,47 @@
+<!-- This page will be redirected from any url if you are not logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h2>
+  <img src="college.png"style="width:64px;height:64px;">
+  CollegeConnector
+</h2>
+
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<h3><a href="shopping-cart.html">back to cart</a></h3>
+<div class="container">
+  <div class="login-box">
+    <div class="login-icon">
+      <img src="college.png"style="width:70px;height:70px;">
+    </div>
+    <form id="checkout_form" method="GET" action="#">
+      <p class="sign_in">Enter your stats</p>
+      <div class="login_field">
+        <label>
+          <input name="SAT" placeholder="Your SAT score" type="text" >
+        </label>
+        <label>
+          <input name="cost" placeholder="Your ideal cost" type="text">
+        </label>
+        <label>
+          <input name="genre" placeholder="School genre" type="text">
+        </label>
+        <input type="submit" value="calculate match">
+      </div>
+    </form>
+    <div id="login_error_message"></div>
+  </div>
+</div>
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./checkout.js"></script>
+
+</body>
+</html>

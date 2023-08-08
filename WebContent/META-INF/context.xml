@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context>
+
+    <Resource name="jdbc/collegedb"
+              auth="Container"
+              driverClassName="com.mysql.cj.jdbc.Driver"
+              type="javax.sql.DataSource"
+              username="mytestuser"
+              password="My6$Password"
+              url="jdbc:mysql://localhost:3306/collegedb"/>
+</Context>

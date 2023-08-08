@@ -1,0 +1,93 @@
+<!-- This example is following frontend and backend separation.
+
+    This .html performs two steps:
+    1. Create a html template skeleton, with all the elements defined (some left empty) and named with ids.
+    2. Load index.js to populate the data into empty elements.
+    -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>School List</title>
+</head>
+<body>
+
+
+<h1>
+    School List
+    <br>
+    <a href="search.html">Back to Search</a>
+    <br>
+    <a href="shopping-cart.html">Go to wishlist</a>
+</h1>
+<form id="sort_form">
+    <label for="sort">Sort this Page by</label>
+    <select name="sort" id="sort">
+        <option value=""></option>
+        <option value="ORDER BY s.name DESC, s.rating DESC">Title (Descending)</option>
+        <option value="ORDER BY s.rating DESC, s.name DESC">Rating (Descending)</option>
+        <option value="ORDER BY s.name ASC, s.rating ASC">Title (Ascending)</option>
+        <option value="ORDER BY s.rating ASC, s.name ASC">Rating (Ascending)</option>
+    </select>
+    <button type="submit">Sort</button>
+</form>
+
+<form id="page_form">
+    <label for="page">Num of Results Per Page</label>
+    <select name="page" id="page">
+        <option value=""></option>
+        <option value=10>10</option>
+        <option value=25>25</option>
+        <option value=50>50</option>
+        <option value=100>100</option>
+    </select>
+    <button type="submit">OK</button>
+</form>
+
+<button id="previousBtn" type="submit">Previous</button>
+<button id="nextBtn" type="submit">Next</button>
+
+<!-- Id "star_table" is useful for jQuery to find the html element with id, class here is mapping to Bootstrap defined class CSS -->
+<table id=school_table class="table table-striped">
+    <!-- Create a table header -->
+    <thead>
+    <tr>
+        <!-- Titles of each column-->
+        <th>Name</th>
+        <th>Rating(out of 5)</th>
+        <th>Location</th>
+        <th>Website</th>
+        <th>Safety Level</th>
+        <th>Telephone</th>
+    </tr>
+
+
+    </thead>
+    <!-- Table body is left empty here, will be populated with the data retrieved with index.js -->
+    <!-- Again, id "star_table_body" is useful for jQuery to find this html element -->
+    <tbody id=school_table_body></tbody>
+</table>
+
+<!-- Load jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Load our own JS file -->
+<!-- The path is relative to index.html, since these two files are in the same directory -->
+<!-- Note the url does not contain a "/" in the beginning, which means the url is relative to current path
+     otherwise the url is relative to the root path-->
+<script src="school_list.js"></script>
+</body>
+
+
+</html>

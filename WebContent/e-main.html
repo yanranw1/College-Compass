@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        table {
+            margin: 0 auto;
+            table-layout: fixed;
+            width: 80%;
+        }
+        th {
+            background-color: #e6e6fa; /* light purple */
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Employee Main Page</title>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="e-main.html">Home</a></li>
+        <li><a href="add-school.html">Add a School</a></li>
+        <li><a href="add-location.html">Add a Location</a></li>
+        <li><a href="add-genre.html">Add a Genre</a></li>
+        <li><a href="search.html">Browsing School</a></li>
+    </ul>
+</nav>
+<h1>Employee Main Page</h1>
+<!-- Set the method to POST to avoid showing the username/password in the URL
+     The default action is disabled to allow your own implementation. -->
+<h2>school</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>name</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>rating</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>numVotes</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>net_cost</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>description</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>upper_SAT</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>lower_SAT</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>link_to_website</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>telephone</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>address</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>link_to_image</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+
+
+<h2>location</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>location_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>city</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>state_init</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>state_full</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>zipcode</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>LivingCostIndex</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>safety</td>
+        <td>INTEGER</td>
+    </tr>
+</table>
+
+
+
+
+<h2>schools_in_locations</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>location_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (id) REFERENCES school(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (location_id) REFERENCES location(location_id)</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>genre</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>fullname</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>genres_in_schools</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>genre_id</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>school_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (genre_id) REFERENCES genre(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (school_id) REFERENCES school(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>preference</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>SAT</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>high_school_GPA</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>states_preference</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>user</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>INTEGER AUTO_INCREMENT </td>
+    </tr>
+    <tr>
+        <td>firstName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>lastName</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>preference_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (preference_id) REFERENCES preference(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+
+<h2>recommendation</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>id</td>
+        <td>INTEGER AUTO_INCREMENT</td>
+    </tr>
+    <tr>
+        <td>user_id</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>school_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>matching_rate</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>similar_school_id</td>
+        <td>INTEGER AUTO_INCREMENT</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (user_id) REFERENCES user(id)</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (school_id) REFERENCES school(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (similar_school_id) REFERENCES school(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+<h2>ratings</h2>
+<table>
+    <tr>
+        <th>Attribute</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>school_id</td>
+        <td>VARCHAR</td>
+    </tr>
+    <tr>
+        <td>rating</td>
+        <td>FLOAT</td>
+    </tr>
+    <tr>
+        <td>numVotes</td>
+        <td>INTEGER</td>
+    </tr>
+    <tr>
+        <td>FOREIGN KEY (school_id) REFERENCES school(id)</td>
+        <td>VARCHAR</td>
+    </tr>
+</table>
+
+
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./search.js"></script>
+
+</body>
+</html>
+

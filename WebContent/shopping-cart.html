@@ -1,0 +1,41 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CollegeConnector</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>Your Wishlist</h1>
+<h2>
+  <a href="search.html">Back to search</a>
+</h2>
+
+<table id=myWishlist class="table table-striped">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Genre</th>
+    <th>State</th>
+    <th>Preference Score</th>
+    <th>
+  </tr>
+  </thead>
+
+  <!-- Table body is left empty here, will be populated with the data retrieved with single-star.js -->
+  <!-- single-star.js will find this html element by it's id "movie_table_body" -->
+  <tbody id=wishlist-items></tbody>
+</table>
+<button id="checkout" type="submit">Calculate match</button>
+</body>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='shopping-cart.js'></script>
+</body>
+</html>

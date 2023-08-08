@@ -8,8 +8,8 @@ A college recommendation Web/Android application, supporting over 20 features, i
 - Improved the App performance with Apache load balancer, JDBC Connection Pooling, and MySQL Master-Slave Replication, allowing multiple users to login and complete each action within 200ms.
 
 
-![](https://github.com/yanranw1/College-Compass/assets/83220283/ea43c84f-2422-444e-ae90-aabef1468db4)
- 
+ ![Flow](https://github.com/yanranw1/College-Compass/assets/83220283/76eafe79-67be-4c26-b94e-944942b3eed3)
+
  
 ### Build With
 - Java

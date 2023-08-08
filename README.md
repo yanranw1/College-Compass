@@ -7,7 +7,8 @@ A college recommendation Web/Android application, supporting over 20 features, i
 - Deployed the application on AWS and GCP for efficient access. 
 - Improved the App performance with Apache load balancer, JDBC Connection Pooling, and MySQL Master-Slave Replication, allowing multiple users to login and complete each action within 200ms.
 
-![](https://github.com/yanranw1/College-Compass/assets/83220283/2b552865-d30f-43e6-97fa-087fee23d1ac)
+
+![](https://github.com/yanranw1/College-Compass/assets/83220283/ea43c84f-2422-444e-ae90-aabef1468db4)
 
  
 

@@ -107,21 +107,16 @@ public class SchoolMapParser {
             e.printStackTrace();
         }
     }
-    /**
-     * It takes an employee Element, reads the values in, creates
-     * an Employee object for return
-     */
+
     private temp_location parseLocation(Element element) {
 
-        // for each <employee> element get text or int values of
-        // name ,id, age and name
+
 
         String location_id = getTextValue(element, "location_id");
         NodeList schoolNodes = element.getElementsByTagName("school");
 
         List<temp_school> schools = new ArrayList<>();
 
-        // parse each Hobby element and add it to the list
         for (int i = 0; i < schoolNodes.getLength(); i++) {
             Element schoolElement = (Element) schoolNodes.item(i);
             temp_school new_school = parseSchool(schoolElement);
@@ -129,7 +124,6 @@ public class SchoolMapParser {
         }
 
 
-        // create a new Employee with the value read from the xml nodes
         return new temp_location(location_id,schools);
     }
 
@@ -138,21 +132,13 @@ public class SchoolMapParser {
         String school_id = getTextValue(element, "school_id");
         String school_name = getTextValue(element, "school_name");
 
-        // create a new Employee with the value read from the xml nodes
         return new temp_school(school_id,  school_name );
     }
 
-    /**
-     * It takes an XML element and the tag name, look for the tag and get
-     * the text content
-     * i.e for <Employee><Name>John</Name></Employee> xml snippet if
-     * the Element points to employee node and tagName is name it will return John
-     */
     private String getTextValue(Element element, String tagName) {
         String textVal = null;
         NodeList nodeList = element.getElementsByTagName(tagName);
         if (nodeList.getLength() > 0) {
-            // here we expect only one <Name> would present in the <Employee>
             textVal = nodeList.item(0).getFirstChild().getNodeValue();
         }
         return textVal;
@@ -163,18 +149,14 @@ public class SchoolMapParser {
         return Float.parseFloat(getTextValue(ele, tagName));
     }
 
-    /**
-     * Calls getTextValue and returns a int value
-     */
+
     private int getIntValue(Element ele, String tagName) {
         // in production application you would catch the exception
         return Integer.parseInt(getTextValue(ele, tagName));
     }
 
     public static void main(String[] args) {
-        // create an instance
         SchoolMapParser domParserExample = new SchoolMapParser();
-        // call run example
         domParserExample.runExample();
     }
 

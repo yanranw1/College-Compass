@@ -7,9 +7,9 @@ A college recommendation Web/Android application, supporting over 20 features, i
 - Deployed the application on AWS and GCP for efficient access. 
 - Improved the App performance with Apache load balancer, JDBC Connection Pooling, and MySQL Master-Slave Replication, allowing multiple users to login and complete each action within 200ms.
 
+![](https://github.com/yanranw1/College-Compass/assets/83220283/2b552865-d30f-43e6-97fa-087fee23d1ac)
 
 
-![](https://github.com/yanranw1/College-Compass/assets/83220283/a52c8317-3bce-4021-a05b-a8e4899f9260)
 
 # Contact
 - Yanran Wang - yanranw1@uci.edu

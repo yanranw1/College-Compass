@@ -9,7 +9,7 @@ A college recommendation Web/Android application, supporting over 20 features, i
 
 ![](https://github.com/yanranw1/College-Compass/assets/83220283/2b552865-d30f-43e6-97fa-087fee23d1ac)
 
-
+ 
 
  
 

@@ -16,6 +16,7 @@ A college recommendation Web/Android application, supporting over 20 features, i
 - Java
 - JavaScript
 - HTML
+- MySQL
 - Maven
 - AWS/GCP
  

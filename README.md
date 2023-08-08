@@ -27,7 +27,7 @@ College Compass is a college recommendation Web/Android application for high sch
 Users are able to create a new account with an email address or login into their account with username and password at the login page. reCAPTCHA is deployed to protect websites from spam and abuse. All passwords are encrypted first and then stored into our database. 
 ### Search/Browse
 Users are able to search for schools with school name, location name, school genre. Autocomplete and search recommendation is also available.
-Users can also choose to browse schools with filters of locations, school genres, and school initials.
+Users can also choose to browse schools with filters of locations, or school genres, and school initials.
 ### Best Match
 At the main page, the user may proceed to a calculate match page, where the user enters personal statistics such as SAT scores, range of tuition cost,preferred major, preferred college location, or preferred college genre, from which the reader can click on "calculate match". The web would ultimately direct the user to a school list with best-matching colleges.
 ### Dream School List

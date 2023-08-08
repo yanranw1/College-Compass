@@ -1,5 +1,5 @@
 # College-Compass
-College Compass is a college recommendation Web/Android application for high school student to find their dream college program. College Compass supports over 20 features, including account creation, college browsing, search functionality, and personalized college recommendation based on user's school interests and academic performance.
+College Compass is a college recommendation Web/Android application for high school students to find their dream college program. College Compass supports over 20 features, including account creation, college browsing, search functionality, and personalized college recommendation based on the user's school interests and academic performance.
 
 - Collected 1000+ college data by web scraping and stored data in a self-designed MySQL database.
 - Designed and implemented the user interface through HTML and JavaScript.

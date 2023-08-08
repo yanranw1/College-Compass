@@ -21,7 +21,7 @@ Users are able to create a new account with email address or login in to their a
 User are able to search for schools with school name, location name, school genre. Auto complete and search recommendation is also avaible.
 User can also choose to browse schools with different location, school genre, and school initial.
 ### Best Match
-At the main page, the user may proceed to a Calculate Match page, where the user enters personal statistics such as SAT scores, range of tuition cost,preferred major, preferred college location or preferred college genre, from which the reader can click on "calculate match", which ultimately directs the user to a school lists with best-matching colleges.
+At the main page, the user may proceed to a calculate match page, where the user enters personal statistics such as SAT scores, range of tuition cost,preferred major, preferred college location, or preferred college genre, from which the reader can click on "calculate match". The web would ultimately directs the user to a school lists with best-matching colleges.
 ### Dream School List
 Each user has a dream school list. Users can add/delete any school from dream school list.
 ### Update Information (Employee Only)

@@ -14,9 +14,9 @@ A college recommendation Web/Android application, supporting over 20 features, i
 
 
 # Usage
-###Login
+### Login
 Users are able to create a new account with email address or login in to their account with username and password at the login page. reCAPTCHA is deployed to protect websites from spam and abuse
-###Search/Browse
+### Search/Browse
 User are able to search for schools with school name, location name, school genre. Auto complete and search recommendation is also avaible. 
 User can also choose to browse schools with different location, school genre, and school initial. 
 

@@ -9,6 +9,10 @@ A college recommendation Web/Android application, supporting over 20 features, i
 
 ![](https://github.com/yanranw1/College-Compass/assets/83220283/2b552865-d30f-43e6-97fa-087fee23d1ac)
 
+
+
+
+
 # Usage
 - Login
 Users are able to create a new account with email address or login in to their account with username and password at the login page. reCAPTCHA is deployed to protect websites from spam and abuse

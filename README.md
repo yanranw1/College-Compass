@@ -11,7 +11,13 @@ A college recommendation Web/Android application, supporting over 20 features, i
 ![](https://github.com/yanranw1/College-Compass/assets/83220283/ea43c84f-2422-444e-ae90-aabef1468db4)
 
  
-
+### Build With
+- Jakarta Servlet
+- Java
+- JavaScript
+- HTML
+- Maven
+- AWS/GCP
  
 
 # Usage

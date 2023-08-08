@@ -12,12 +12,13 @@ A college recommendation Web/Android application, supporting over 20 features, i
 
  
 ### Build With
-- Jakarta Servlet
 - Java
 - JavaScript
 - HTML
 - MySQL
 - Android Studio
+- Jakarta Servlet
+- REST API
 - Maven
 - AWS/GCP
  

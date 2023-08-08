@@ -19,6 +19,7 @@ import java.util.HashMap;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+
 @WebServlet("/school-suggestion")
 public class SchoolSuggestion extends HttpServlet {
 

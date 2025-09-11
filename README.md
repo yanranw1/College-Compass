@@ -34,5 +34,3 @@ At the main page, the user may proceed to a calculate match page, where the user
 Each user has a dream school list. Users can add/delete any school from their dream school list.
 ### Update Information (Employee Only)
 Information update page is available for employees of college compass to add new schools in the future without direct access to the database. To access the information update page, users need to pass an employee check with an employee username and password. 
-# Contact
-- Yanran Wang - yanranw1@uci.edu
